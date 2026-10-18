@@ -1,0 +1,616 @@
+
+/* =========================
+   1. GENERAL STYLING
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* =========================
+   2. NAVIGATION BAR
+========================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #172554;
+    padding: 20px 8%;
+    color: white;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+/* =========================
+   3. BUTTONS
+========================= */
+
+.btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* =========================
+   4. HOME PAGE
+========================= */
+
+.home {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+}
+
+.home-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.home h1 {
+    font-size: 48px;
+    color: #172554;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 18px;
+    color: #475569;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   5. GENERAL SECTIONS
+========================= */
+
+.section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    color: #172554;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   6. SERVICES
+========================= */
+
+.services {
+    background-color: #f8fafc;
+    text-align: center;
+}
+
+.services-description {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #475569;
+    text-align: center;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.service-card {
+    flex: 1 1 260px;
+    max-width: 350px;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.service-card h3 {
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+/* Services page heading */
+.services-hero {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+}
+
+.services-hero h1 {
+    font-size: 42px;
+    color: #172554;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.services-hero p {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #475569;
+    text-align: center;
+}
+
+.services .service-container {
+    justify-content: center;
+}
+
+.services-contact {
+    padding: 70px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.services-contact h2 {
+    color: #172554;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.services-contact p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #475569;
+    font-size: 17px;
+}
+
+/* =========================
+   7. ABOUT PAGE
+========================= */
+
+/* About hero */
+.about-hero {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+}
+
+.about-hero h1 {
+    font-size: 42px;
+    color: #172554;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.about-hero p {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #475569;
+    text-align: center;
+}
+
+/* Who We Are */
+.about-section {
+    padding: 70px 8%;
+    background-color: white;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    color: #172554;
+    margin-bottom: 25px;
+}
+
+.about-content p {
+    font-size: 17px;
+    color: #475569;
+    margin-bottom: 18px;
+    line-height: 1.8;
+}
+
+/* Mission, Vision and Values */
+.mission-vision {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 60px 8%;
+    background-color: #f8fafc;
+}
+
+.info-card {
+    flex: 1 1 220px;
+    max-width: 350px;
+    padding: 35px 25px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.info-card h2 {
+    color: #2563eb;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: #475569;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* About contact section */
+.about-contact {
+    padding: 70px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.about-contact h2 {
+    color: #172554;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.about-contact p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #475569;
+    font-size: 17px;
+}
+
+/* =========================
+   8. CONTACT FORM PAGE
+========================= */
+
+.contact-section {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f1f5f9;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 35px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact form logo */
+.form-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-logo img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+/* Contact heading and description */
+.contact-container h1 {
+    text-align: center;
+    color: #172554;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+/* Form labels */
+.contact-container label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+/* Form inputs, dropdown and textarea */
+.contact-container input,
+.contact-container select,
+.contact-container textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: inherit;
+    background-color: white;
+}
+
+.contact-container input:focus,
+.contact-container select:focus,
+.contact-container textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.12);
+}
+
+.contact-container textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Submit button */
+.contact-container button {
+    width: 100%;
+    padding: 13px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-container button:hover {
+    background-color: #1d4ed8;
+}
+
+/* =========================
+   9. FOOTER
+========================= */
+
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* =========================
+   10. RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    /* Navigation */
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    /* Home page */
+    .home {
+        min-height: 65vh;
+    }
+
+    .home h1 {
+        font-size: 34px;
+    }
+
+    .home p {
+        font-size: 16px;
+    }
+
+    /* General sections */
+    .section {
+        padding: 45px 20px;
+    }
+
+    .section h2 {
+        font-size: 28px;
+    }
+
+    /* Services page */
+    .services-hero {
+        min-height: 250px;
+        padding: 45px 20px;
+    }
+
+    .services-hero h1 {
+        font-size: 32px;
+    }
+
+    .services-hero p {
+        font-size: 16px;
+    }
+
+    .service-container,
+    .services .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card,
+    .services .service-card {
+        width: 100%;
+        max-width: 450px;
+        flex: 1 1 auto;
+    }
+
+    .services-contact {
+        padding: 45px 20px;
+    }
+
+    .services-contact h2 {
+        font-size: 27px;
+    }
+
+    /* About page */
+    .about-hero {
+        min-height: 250px;
+        padding: 45px 20px;
+    }
+
+    .about-hero h1 {
+        font-size: 32px;
+    }
+
+    .about-hero p {
+        font-size: 16px;
+    }
+
+    .about-section {
+        padding: 45px 20px;
+    }
+
+    .about-content h2 {
+        font-size: 28px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .mission-vision {
+        padding: 40px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-card {
+        width: 100%;
+        max-width: 450px;
+        flex: 1 1 auto;
+    }
+
+    .about-contact {
+        padding: 45px 20px;
+    }
+
+    .about-contact h2 {
+        font-size: 27px;
+    }
+
+    /* Contact form */
+    .contact-section {
+        padding: 30px 15px;
+    }
+
+    .contact-container {
+        padding: 25px 20px;
+    }
+
+    .contact-container h1 {
+        font-size: 28px;
+    }
+
+    .form-logo img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Small mobile screens */
+@media (max-width: 400px) {
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    .about-hero h1,
+    .services-hero h1 {
+        font-size: 29px;
+    }
+
+    .contact-container {
+        padding: 20px 15px;
+    }
+}
